@@ -1,0 +1,186 @@
+@import './borders.css';
+@import './flex-and-grid.css';
+@import './layout.css';
+@import './sizing.css';
+@import './spacing.css';
+@import './typography.css';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --red: #F56146;
+    --black: #1D1D1D;
+    --white: #FFFFFF;
+}
+
+body,
+button,
+input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--black);
+}
+
+section,
+footer {
+    padding: 0 8rem;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 8rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: var(--red);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* ---------------------------------------------- */
+.bg-color-white {
+    background-color: var(--white);
+}
+
+.big-card,
+.small-card {
+    background-color: var(--white);
+}
+
+.big-card__image {
+    height: 300px;
+}
+
+.big-card__image,
+.small-card__image {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.big-card__text,
+.small-card__text {
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: default;
+}
+
+.big-card__text-container,
+.small-card__text-container {
+    padding: 0.5rem;
+    height: 30px;
+}
+
+.category {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.category__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.img-300 {
+    width: 300px;
+    height: 300px;
+}
+
+.img-50 {
+    width: 50px;
+    height: 50px;
+}
+
+.small-card__image {
+    height: 200px;
+}
+
+.rotd__text {
+    margin-right: 10rem;
+}
+
+.hamburger {
+    width: 25px;
+    height: 25px;
+}
+
+.hamburger>span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    border-radius: 10px;
+}
+
+.hamburger__beef {
+    margin: 5px 0;
+    transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 675px) {
+
+    section,
+    footer,
+    nav {
+        padding: 0 2rem;
+    }
+
+    .flex-col-phone {
+        flex-direction: column;
+    }
+
+    .text-3xl-phone {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    .w-200px-phone {
+        width: 200px;
+    }
+
+    .w-300px-phone {
+        width: 300px;
+    }
+
+    .h-16-phone {
+        height: 1.6rem;
+    }
+
+    .display-none-phone {
+        display: none;
+    }
+
+    .rotd__text {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .h-120-phone {
+        height: 30rem;
+    }
+}

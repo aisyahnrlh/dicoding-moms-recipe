@@ -1,0 +1,23 @@
+.absolute {
+    position: absolute;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.relative {
+    position: relative;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.z-1 {
+    z-index: -1;
+}

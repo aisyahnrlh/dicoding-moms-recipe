@@ -1,0 +1,37 @@
+/* widths */
+.w-60 {
+    width: 15rem;
+}
+
+.w-80 {
+    width: 20rem;
+}
+
+.w-600px {
+    width: 600px;
+}
+
+.w-9-12 {
+    width: 75%;
+}
+
+.w-full {
+    width: 100%;
+}
+
+/* heights */
+.h-10 {
+    height: 2.5rem;
+}
+
+.h-200px {
+    height: 200px;
+}
+
+.h-600px {
+    height: 600px;
+}
+
+.h-128 {
+    height: 32rem;
+}
